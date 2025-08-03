@@ -11,7 +11,7 @@ namespace EmailOTPAPI.Services
     public class OtpService : IOtpService
     {
         private readonly OtpDbContext _context;
-        private const int OTP_EXPIRY_MINUTES = 2;
+        private const int OTP_EXPIRY_MINUTES = 1;
         private static readonly Regex EmailRegex = new(@"^[^@\s]+@dso\.org\.sg$", RegexOptions.Compiled);
         private const int MAX_ATTEMPTS = 10;
 
